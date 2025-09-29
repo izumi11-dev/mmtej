@@ -49,18 +49,71 @@
 <section id="home" class="position-relative">
   <div class="bg-dark position-relative">
     <img src="img/ho.jpg" class="w-100" style="height:90vh; object-fit:cover;" alt="Mental Health">
-    <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3"
-         style="background: rgba(0,0,0,0.5);">
-      <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Mental Health Matters</h1>
-      <p class="lead animate__animated animate__fadeInUp">
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white p-3 heroText"
+         style="background: rgba(0,0,0,0.5); height: 90vh; width: 100%;">
+      <div class="heroSet position-absolute top-50 start-50 translate-middle">
+        <h1 class="display-4 fw-bold animate__animated animate__fadeInDown heroTexth">Mental Health Matters</h1>
+      <p class="lead animate__animated animate__fadeInUp heroTextt">
         We provide professional mental health support and resources to help you thrive and feel connected.
       </p>
-      <div class="mt-4">
-        <a href="#contact" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Book Now</a>
-        <a href="#about" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp ms-2">Who We Are</a>
+      <div class="mt-4 hreoSetb">
+        <a href="#contact" class="btn btn-primary btn-lg animate__animated animate__fadeInUp heroSetBtnN">Book Now</a>
+        <a href="#about" class="btn btn-outline-light btn-lg animate__animated animate__fadeInUp ms-2 heroSetBtnW">Who We Are</a>
+      </div>
       </div>
     </div>
   </div>
+
+  <style>
+     @media (max-width: 576px) {
+      .heroText {
+        height: 90vh;
+        width: 100%;
+        
+      }
+
+      .heroSet{
+      position: absolute;
+      top: 50%;
+      
+      
+      }
+
+      .heroTexth{
+        font-size: 18px;
+      }
+
+      .heroTextt{
+        font-size: 18px;
+      }
+
+      .hreoSetb{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    .heroSetBtnN {
+  height: 40px;
+  width: 150px;
+  font-size: 12px;   /* adjust as needed */
+  display: flex;      /* use flexbox */
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+}
+
+.heroSetBtnW{
+  height: 40px;
+  width: 150px;
+  font-size: 12px;   /* adjust as needed */
+  display: flex;      /* use flexbox */
+  align-items: center; /* vertical center */
+  justify-content: center;
+}
+
+    }
+
+  </style>
 </section>
 
 <!-- About Section -->
@@ -712,3 +765,4 @@ navLinks.forEach(link => {
 </script>
 </body>
 </html>
+
